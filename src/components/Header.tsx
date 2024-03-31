@@ -1,7 +1,9 @@
+import { useLocation } from 'react-router-dom';
 import { brainwave } from '../assets/index';
 import { navigation } from '../content/index';
 
 const Header = () => {
+	const { hash } = useLocation();
 	return (
 		<div
 			className='fixed top-0 z-50 
@@ -33,8 +35,10 @@ const Header = () => {
 							<a
 								className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 px-6 py-6
                                     md:py-8
-                                    lg:-mr-0.25 lg:text-xs lg:font-semibold
-                                    ${item.onlyMobile ? 'lg:hidden' : ''} `}
+                                    lg:-mr-0.25 lg:text-xs lg:font-semibold lg:leading-5 lg:hover:text-n-1
+                                    xl:px-12
+                                    ${item.onlyMobile ? 'lg:hidden' : ''}
+                                    ${item.url === hash ? 'z-2 lg:text-n-1' : 'lg:text-n-1/50'} `}
 								key={item.id}
 								href={item.url}>
 								{item.title}
