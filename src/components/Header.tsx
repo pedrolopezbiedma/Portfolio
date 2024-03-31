@@ -5,10 +5,16 @@ import { navigation } from '../content/index';
 import Button from './Button';
 import MenuSvg from '../assets/svg/MenuSvg';
 import { HamburgerMenu } from './HeaderMobile';
+import { disablePageScroll, enablePageScroll } from 'scroll-lock';
 
 const Header = () => {
 	const { hash } = useLocation();
 	const [openMobileNavigation, setOpenMobileNavigation] = useState(false);
+
+	const toggleNavigation = () => {
+		setOpenMobileNavigation(!openMobileNavigation);
+		openMobileNavigation ? disablePageScroll() : enablePageScroll();
+	};
 
 	return (
 		<div
@@ -67,7 +73,7 @@ const Header = () => {
 				</Button>
 				<Button
 					className='ml-auto lg:hidden'
-					onClick={() => setOpenMobileNavigation(!openMobileNavigation)}>
+					onClick={toggleNavigation}>
 					<MenuSvg openNavigation={openMobileNavigation} />
 				</Button>
 			</div>
