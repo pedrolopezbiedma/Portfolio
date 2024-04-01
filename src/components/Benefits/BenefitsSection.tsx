@@ -8,7 +8,7 @@ import ClipPath from '../../assets/svg/ClipPath';
 const BenefitsSection = () => {
 	return (
 		<Section
-			id='benefits'
+			id='features'
 			crosses={false}
 			crossesOffset=''
 			customPaddings={false}>
