@@ -1,10 +1,11 @@
+import ButtonGradient from '../../assets/svg/ButtonGradient';
 import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { brainwave } from '../../assets/index';
 import { navigation } from '../../content/index';
 import Button from '../shared/Button';
 import MenuSvg from '../../assets/svg/MenuSvg';
-import { HamburgerMenu } from '../HeaderMobile';
+import { HamburgerMenu } from './HeaderMobile';
 import { disablePageScroll, enablePageScroll } from 'scroll-lock';
 
 const Header = () => {
@@ -77,6 +78,7 @@ const Header = () => {
 					<MenuSvg openNavigation={openMobileNavigation} />
 				</Button>
 			</div>
+			<ButtonGradient />
 		</div>
 	);
 };

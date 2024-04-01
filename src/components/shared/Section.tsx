@@ -6,7 +6,8 @@ interface SectionProps {
 	crosses: boolean;
 	crossesOffset: string;
 	customPaddings: boolean;
-	children: React.ReactNode;
+	// eslint-disable-next-line @typescript-eslint/no-explicit-any
+	children: any;
 }
 
 const Section = ({ id, className, crosses, crossesOffset, customPaddings, children }: SectionProps) => {
