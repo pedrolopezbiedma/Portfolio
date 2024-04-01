@@ -1,7 +1,8 @@
-import BenefitsSection from './components/Benefits/BenefitsSection';
-import CollaborationSection from './components/Collaboration/CollaborationSection';
 import Header from './components/Header/Header';
 import HeroSection from './components/Hero/HeroSection';
+import BenefitsSection from './components/Benefits/BenefitsSection';
+import CollaborationSection from './components/Collaboration/CollaborationSection';
+import ServicesSection from './components/Services/ServicesSection';
 
 const App = () => {
 	return (
@@ -12,6 +13,7 @@ const App = () => {
 				{/* // TODO: Fix the background images squares */}
 				<BenefitsSection />
 				<CollaborationSection />
+				<ServicesSection />
 			</div>
 		</>
 	);

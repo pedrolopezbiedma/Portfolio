@@ -2,7 +2,7 @@ import SectionSvg from '../../assets/svg/SectionSvg';
 
 interface SectionProps {
 	id: string;
-	className: string;
+	className?: string;
 	crosses: boolean;
 	crossesOffset: string;
 	customPaddings: boolean;
