@@ -36,7 +36,7 @@ const Rings = () => {
 };
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export const BackgroundCircles = ({ parallaxRef }: { parallaxRef: MutableRefObject<any> }) => {
+export const BackgroundCircles = ({ parallaxRef }: { parallaxRef?: MutableRefObject<any> }) => {
 	const [mounted, setMounted] = useState(false);
 
 	useEffect(() => {
