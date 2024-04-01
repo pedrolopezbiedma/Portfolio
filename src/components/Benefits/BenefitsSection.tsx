@@ -2,7 +2,7 @@ import Section from '../shared/Section';
 import Heading from '../shared/Heading';
 import { benefits } from '../../content';
 import Arrow from '../../assets/svg/Arrow';
-import { GradientLight } from '../Benefits';
+import { GradientLight } from './Benefits';
 import ClipPath from '../../assets/svg/ClipPath';
 
 const BenefitsSection = () => {

@@ -15,9 +15,9 @@ const HeroSection = () => {
 		<Section
 			id='hero'
 			className='pt-[12rem] -mt-[5.25rem]'
-			crosses={false}
+			crosses
 			crossesOffset='lg:translate-y-[5.25rem]'
-			customPaddings>
+			customPaddings={false}>
 			<div
 				className='container relative'
 				ref={parallaxRef}>

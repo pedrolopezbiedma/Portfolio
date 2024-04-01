@@ -1,7 +1,7 @@
 import ButtonSvg from '../../assets/svg/ButtonSvg';
 
 interface ButtonProps {
-	className: string;
+	className?: string;
 	href?: string;
 	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	children?: any;
