@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import { brainwave } from '../assets/index';
-import { navigation } from '../content/index';
-import Button from './Button';
-import MenuSvg from '../assets/svg/MenuSvg';
-import { HamburgerMenu } from './HeaderMobile';
+import { brainwave } from '../../assets/index';
+import { navigation } from '../../content/index';
+import Button from '../shared/Button';
+import MenuSvg from '../../assets/svg/MenuSvg';
+import { HamburgerMenu } from '../HeaderMobile';
 import { disablePageScroll, enablePageScroll } from 'scroll-lock';
 
 const Header = () => {
