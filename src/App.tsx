@@ -3,6 +3,7 @@ import HeroSection from './components/Hero/HeroSection';
 import BenefitsSection from './components/Benefits/BenefitsSection';
 import CollaborationSection from './components/Collaboration/CollaborationSection';
 import ServicesSection from './components/Services/ServicesSection';
+import PricingSection from './components/Pricing/PricingSection';
 
 const App = () => {
 	return (
@@ -13,6 +14,7 @@ const App = () => {
 				<BenefitsSection />
 				<CollaborationSection />
 				<ServicesSection />
+				<PricingSection />
 			</div>
 		</>
 	);
