@@ -4,6 +4,7 @@ import BenefitsSection from './components/Benefits/BenefitsSection';
 import CollaborationSection from './components/Collaboration/CollaborationSection';
 import ServicesSection from './components/Services/ServicesSection';
 import PricingSection from './components/Pricing/PricingSection';
+import RoadmapSection from './components/Roadmap/RoadmapSection';
 
 const App = () => {
 	return (
@@ -15,6 +16,7 @@ const App = () => {
 				<CollaborationSection />
 				<ServicesSection />
 				<PricingSection />
+				<RoadmapSection />
 			</div>
 		</>
 	);
