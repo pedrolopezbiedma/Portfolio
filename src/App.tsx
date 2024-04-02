@@ -5,6 +5,7 @@ import CollaborationSection from './components/Collaboration/CollaborationSectio
 import ServicesSection from './components/Services/ServicesSection';
 import PricingSection from './components/Pricing/PricingSection';
 import RoadmapSection from './components/Roadmap/RoadmapSection';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
 	return (
@@ -17,6 +18,7 @@ const App = () => {
 				<ServicesSection />
 				<PricingSection />
 				<RoadmapSection />
+				<Footer />
 			</div>
 		</>
 	);
